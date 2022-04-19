@@ -56,24 +56,22 @@ __成功畫面:__
 ![django](images/django.png)
 
 在專案中新增views.py，並在此輸入以下程式碼:
-
 ```py
 
   from django.http import HttpResponse
 
   def hello(request):
-     return HttpResponse("hello world")
+      return HttpResponse("hello world")
 
 ```
 ![views](/images/views.py.png)
 
-url.py中新增以下程式碼:
-
+url.py中新增以下程式碼:  
 __1:__
 ```py
  
-  from . import views
   from django.urls import re_path as urls 
+  from . import views
 
 ```
 
@@ -83,7 +81,10 @@ __2:__
     url(r'^$',views.hello)
 
 ```
+![urlspy](/images/urls.py.png)
 
+瀏覽器輸入127.0.0.1:8000在本機測試頁面:
+![hellowworld](/images/helloworld.png)
 
 建立django app
 ---
