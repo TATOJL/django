@@ -84,7 +84,7 @@ __2:__
 瀏覽器輸入127.0.0.1:8000在本機測試頁面:
 ![hellowworld](/images/helloworld.png)
 
-建立django app
+新增django app
 ---
 
 cd到專案的資料夾中，然後在終端機輸入:
@@ -95,14 +95,12 @@ cd到專案的資料夾中，然後在終端機輸入:
  ```
  ![app](images/app.png)
 
- 建立完要將app加入到settings.py中:
- ![app-settings](images/app_settings.png)
 
 新增模板與靜態文件
 ---
 
 在專案資料夾中，新增以下文件:  
-![app-settings](images/statics.png)
+![app-statics](images/statics.png)
 
 
 
