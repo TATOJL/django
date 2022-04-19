@@ -1,4 +1,4 @@
-# django
+# django(windows)
 
  下載django
  ---------
