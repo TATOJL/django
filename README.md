@@ -68,7 +68,7 @@ cd到專案的資料夾中，然後在終端機輸入:
 
  建立完要將app加入到設定檔裡
 
- ![app](images/app-settings.png)
+ ![app-settings](images/app_settings%20.png)
 
 
 
