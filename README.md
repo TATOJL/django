@@ -62,7 +62,7 @@
       return HttpResponse("hello world")
 
 ```
-![views](/images/views.py.png)
+![views](/images/views.png)
 
 url.py中新增以下程式碼:  
 __1:__
