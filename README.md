@@ -21,7 +21,7 @@
  -------------
 
  在終端機輸入:
- 
+
  ```shell 
 
   python -m django --version 
@@ -37,6 +37,9 @@
   django-admin startproject project
 
  ```
+ 
+ ![projecct](images/project.png)
+
  測試django
  ---
 
@@ -52,5 +55,20 @@
 
 __成功畫面:__
 ![django](images/django.png)
+
+建立django app
+---
+cd到專案的資料夾中，然後在終端機輸入:
+ ```shell
+
+  python manage.py startapp app
+
+ ```
+ ![app](images/app.png)
+
+ 建立完要將app加入到設定檔裡
+
+ ![app](images/app-settings.png)
+
 
 
