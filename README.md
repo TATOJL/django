@@ -10,16 +10,18 @@
  ```
  __pip下載:__
 
- ```shell
-    
+
+  ```shell
+
    py -m pip install Django
 
  ```
+
  查看django版本
  -------------
  ```shell 
 
-   python -m django --version 
+  python -m django --version 
 
  ```
  創建django專案
@@ -31,11 +33,12 @@
  ```
  測試django
  ---
-```shell
- 
- python manage.py runserver
+ ```shell
 
-```
+  python manage.py runserver
+
+ ```
+ 
 瀏覽器輸入127.0.0.1:8000在本機測試django
 
 __成功畫面:__
