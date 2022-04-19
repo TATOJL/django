@@ -19,6 +19,9 @@
 
  查看django版本
  -------------
+
+ 在終端機輸入:
+ 
  ```shell 
 
   python -m django --version 
@@ -26,6 +29,9 @@
  ```
  創建django專案
  -------------
+
+ 在終端機輸入:
+
  ```shell
 
   django-admin startproject project
@@ -33,6 +39,9 @@
  ```
  測試django
  ---
+
+ cd到專案的資料夾中，然後在終端機輸入:
+
  ```shell
 
   python manage.py runserver
