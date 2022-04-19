@@ -38,7 +38,6 @@
 
  ```
 
- 建立好的專案:
  ![projecct](images/project.png)
 
  測試django
@@ -56,6 +55,36 @@
 __成功畫面:__
 ![django](images/django.png)
 
+在專案中新增views.py，並在此輸入以下程式碼:
+
+```py
+
+  from django.http import HttpResponse
+
+  def hello(request):
+     return HttpResponse("hello world")
+
+```
+![views](/images/views.py.png)
+
+url.py中新增以下程式碼:
+
+__1:__
+```py
+ 
+  from . import views
+  from django.urls import re_path as urls 
+
+```
+
+__2:__
+```py
+ 
+    url(r'^$',views.hello)
+
+```
+
+
 建立django app
 ---
 
@@ -67,7 +96,7 @@ cd到專案的資料夾中，然後在終端機輸入:
  ```
  ![app](images/app.png)
 
- 建立完要將app加入到設定檔裡:
+ 建立完要將app加入到settings.py中:
  ![app-settings](images/app_settings.png)
 
 新增模板與靜態文件
