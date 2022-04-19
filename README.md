@@ -27,7 +27,7 @@
   python -m django --version 
 
  ```
- 
+
  創建django專案
  ---
 
@@ -73,7 +73,7 @@ cd到專案的資料夾中，然後在終端機輸入:
 新增模板與靜態文件
 ---
 
-在專案資料夾中，新增以下文件:
+在專案資料夾中，新增以下文件:  
 ![app-settings](images/statics.png)
 
 
