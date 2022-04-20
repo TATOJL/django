@@ -1,14 +1,17 @@
 # **django(windows本地端測試)**
 
 
-## [下載django](#下載django)
-## [查看django版本](#查看django版本)
-## [創建django專案](#創建django專案)
-## [測試django](#測試django)
-## [新增模板與靜態文件](#新增模板與靜態文件)
+## [下載django](#1)
+## [查看django版本](#2)
+## [創建django專案](#3)
+## [測試django](#4)
+## [新增django app](#5)
+## [新增模板與靜態文件](#6)
 
-# 下載django
- ---
+<h1 id="1">
+ 下載django
+</h1>
+ 
 
  __Anaconda虛擬環境下載:__
 ```shell
@@ -24,8 +27,9 @@ py -m pip install Django
 
 ```
 
-# 查看django版本
-
+<h1 id="2">
+ 查看django版本
+</h1>
 
 
 在終端機輸入:
@@ -35,7 +39,9 @@ python -m django --version
 
 ```
 
-# 創建django專案
+<h1 id="3">
+ 創建django專案
+</h1>
 
 
  在終端機輸入:
@@ -47,7 +53,9 @@ django-admin startproject project
 
  ![projecct](images/project.png)
 
-# 測試django
+<h1 id="4">
+ 測試django
+</h1>
 
 
 cd到專案的資料夾中，然後在終端機輸入:
@@ -93,7 +101,10 @@ url(r'^$',views.hello)
 
 ---
 
-# 新增django app
+<h1 id="5">
+ 新增django app
+</h1>
+
 
 
 cd到專案的資料夾中，然後在終端機輸入:
@@ -138,7 +149,10 @@ url(r'^app/',index)
 瀏覽器輸入127.0.0.1:8000/app在本機測試頁面:
 ![test](images/app-test.png)
 
-# 新增模板與靜態文件
+<h1 id="6">
+ 新增模板與靜態文件
+</h1>
+
 
 
 在專案資料夾中，新增以下文件(html檔放templates 其他靜態資料放statics):  
