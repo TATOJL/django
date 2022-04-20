@@ -69,7 +69,7 @@ def hello(request):
 在url.py中新增以下程式碼:  
 ```py
  
-from django.urls import re_path as urls 
+from django.urls import re_path as url
 from . import views
 
 ```
