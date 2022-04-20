@@ -125,12 +125,71 @@ url(r'^app/',index)
 新增模板與靜態文件
 ---
 
-在專案資料夾中，新增以下文件:  
+在專案資料夾中，新增以下文件(html檔放templates 其他靜態資料放statics):  
 ![app-statics](images/statics.png)
 
 
+到設定檔(settings)裡新增以下程式碼:  
+```py
+
+import os
+
+```
+```py
+
+'DIRS': [os.path.join(BASE_DIR,"templates")],
+
+```
+```py
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR,"statics")
+]
+
+```
+![app-statics](images/import-os.png)
+---
+![app-statics](images/statics-settings.png)
+---
+![app-statics](images/templates-settings.png)
+
+到templates資料夾新增index.html，找一張圖片(放在statics/images資料夾裡)，並輸入以下程式碼用以測試靜態資料:
+```html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{content}}</title>
+    <link rel="shortcut icon" href="{% static 'images/logo.png' %}">
+</head>
+<body>
+<h1>{{content}}</h1>
+<img src="{% static 'images/logo.png' %}" alt="">
+</html>
+
+```
+![app-statics](images/index.html.png)
+
+到專案資料夾的views.py裡把裡面程式碼改寫成:
+```py
+
+from django.shortcuts import render
 
 
+def hello(request):
+    return render(request, 'index.html', {
+        'content': "Hello Django ",
+    })
+
+```
+![app-statics](images/templates-views.png)
+
+瀏覽器輸入127.0.0.1:8000在本機測試頁面:  
+![app-statics](images/HelloDjango.png)
 
 
 
