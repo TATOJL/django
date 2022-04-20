@@ -86,6 +86,51 @@ url(r'^$',views.hello)
 
 ---
 
+# 新增django app
+
+
+cd到專案的資料夾中，然後在終端機輸入:
+```shell
+
+python manage.py startapp app
+
+```
+ ![app](images/app.png)
+
+---
+把app加到設定檔(settings.py)裡:
+![settings](images/app-settings.png)
+
+---
+在app資料夾裡的views.py中加入以下程式碼:
+```py
+
+from django.http import HttpResponse
+
+def index(request):
+      return HttpResponse("hello app")
+
+```
+![settings](images/app-views.png)
+
+---
+最後在url.py加入以下程式碼:    
+```py
+
+from app.views import index
+
+```
+```py
+
+url(r'^app/',index)
+
+```
+![settings](images/app-url.png)
+
+---
+瀏覽器輸入127.0.0.1:8000/app在本機測試頁面:
+![test](images/app-test.png)
+
 # 新增模板與靜態文件
 
 
@@ -157,50 +202,5 @@ def hello(request):
 ---
 瀏覽器輸入127.0.0.1:8000在本機測試頁面:  
 ![app-statics](images/HelloDjango.png)
-
-# 新增django app
-
-
-cd到專案的資料夾中，然後在終端機輸入:
-```shell
-
-python manage.py startapp app
-
-```
- ![app](images/app.png)
-
----
-把app加到設定檔(settings.py)裡:
-![settings](images/app-settings.png)
-
----
-在app資料夾裡的views.py中加入以下程式碼:
-```py
-
-from django.http import HttpResponse
-
-def index(request):
-      return HttpResponse("hello app")
-
-```
-![settings](images/app-views.png)
-
----
-最後在url.py加入以下程式碼:    
-```py
-
-from app.views import index
-
-```
-```py
-
-url(r'^app/',index)
-
-```
-![settings](images/app-url.png)
-
----
-瀏覽器輸入127.0.0.1:8000/app在本機測試頁面:
-![test](images/app-test.png)
 
 
