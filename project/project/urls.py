@@ -17,9 +17,10 @@ from django.contrib import admin
 from django.urls import path
 from django.urls import re_path as url
 from . import views
+from app.views import index
 
 urlpatterns = [
-    # path('app/', include('app.urls')),
     path('admin/', admin.site.urls),
-    url(r'^$',views.hello)
+    url(r'^$',views.hello),
+    url(r'^app/',index)
 ]
