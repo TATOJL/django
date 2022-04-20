@@ -1,12 +1,12 @@
 # **django(windows本地端測試)**
 
 
-## [下載django](#1)
-## [查看django版本](#2)
-## [創建django專案](#3)
-## [測試django](#4)
-## [新增django app](#5)
-## [新增模板與靜態文件](#6)
+- ## [下載django](#1)
+- ## [查看django版本](#2)
+- ## [創建django專案](#3)
+- ## [測試django](#4)
+- ## [新增django app](#5)
+- ## [新增模板與靜態文件](#6)
 
 <h1 id="1">
  下載django
@@ -179,9 +179,10 @@ STATICFILES_DIRS = [
 ```
 ![app-statics](images/import-os.png)
 
+![app-statics](images/templates-settings.png)
+
 ![app-statics](images/statics-settings.png)
 
-![app-statics](images/templates-settings.png)
 
 ---
 到templates資料夾新增index.html，找一張圖片(放在statics/images資料夾裡)，並輸入以下程式碼用以測試靜態資料:  
