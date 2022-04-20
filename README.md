@@ -153,7 +153,7 @@ STATICFILES_DIRS = [
 ---
 ![app-statics](images/templates-settings.png)
 
-到templates資料夾新增index.html，找一張圖片(放在statics/images資料夾裡)，並輸入以下程式碼用以測試靜態資料:
+到templates資料夾新增index.html，找一張圖片(放在statics/images資料夾裡)，並輸入以下程式碼用以測試靜態資料:  
 ```html
 
 <!DOCTYPE html>
