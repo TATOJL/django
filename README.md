@@ -49,10 +49,11 @@ cd到專案的資料夾中，然後在終端機輸入:
 python manage.py runserver
 
 ```
- 
+--- 
 瀏覽器輸入127.0.0.1:8000在本機測試django:
 ![django](images/django.png)
 
+---
 在專案中新增views.py，並在此輸入以下程式碼:
 ```py
 
@@ -64,6 +65,7 @@ def hello(request):
 ```
 ![views](/images/views.png)
 
+---
 在url.py中新增以下程式碼:  
 ```py
  
@@ -78,9 +80,11 @@ url(r'^$',views.hello)
 ```
 ![url.py](/images/urls.py.png)
 
+---
 瀏覽器輸入127.0.0.1:8000在本機測試頁面:
 ![hellowworld](/images/helloworld.png)
 
+---
 新增django app
 ---
 
@@ -92,9 +96,11 @@ python manage.py startapp app
 ```
  ![app](images/app.png)
 
+---
 把app加到設定檔(settings.py)裡:
 ![settings](images/app-settings.png)
 
+---
 在app資料夾裡的views.py中加入以下程式碼:
 ```py
 
@@ -106,6 +112,7 @@ def index(request):
 ```
 ![settings](images/app-views.png)
 
+---
 最後在url.py加入以下程式碼:    
 ```py
 
@@ -119,6 +126,7 @@ url(r'^app/',index)
 ```
 ![settings](images/app-url.png)
 
+---
 瀏覽器輸入127.0.0.1:8000/app在本機測試頁面:
 ![test](images/app-test.png)
 
@@ -128,7 +136,7 @@ url(r'^app/',index)
 在專案資料夾中，新增以下文件(html檔放templates 其他靜態資料放statics):  
 ![app-statics](images/statics.png)
 
-
+---
 到設定檔(settings)裡新增以下程式碼:  
 ```py
 
@@ -148,11 +156,12 @@ STATICFILES_DIRS = [
 
 ```
 ![app-statics](images/import-os.png)
----
+
 ![app-statics](images/statics-settings.png)
----
+
 ![app-statics](images/templates-settings.png)
 
+---
 到templates資料夾新增index.html，找一張圖片(放在statics/images資料夾裡)，並輸入以下程式碼用以測試靜態資料:  
 ```html
 
@@ -174,6 +183,7 @@ STATICFILES_DIRS = [
 ```
 ![app-statics](images/index.html.png)
 
+---
 到專案資料夾的views.py裡把裡面程式碼改寫成:
 ```py
 
@@ -188,6 +198,7 @@ def hello(request):
 ```
 ![app-statics](images/templates-views.png)
 
+---
 瀏覽器輸入127.0.0.1:8000在本機測試頁面:  
 ![app-statics](images/HelloDjango.png)
 
