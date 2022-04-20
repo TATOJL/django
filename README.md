@@ -76,7 +76,7 @@ from . import views
 url(r'^$',views.hello)
 
 ```
-![urlspy](/images/urls.py.png)
+![url.py](/images/urls.py.png)
 
 瀏覽器輸入127.0.0.1:8000在本機測試頁面:
 ![hellowworld](/images/helloworld.png)
@@ -117,7 +117,7 @@ from app.views import index
 url(r'^app/',index)
 
 ```
-![settings](images/app-views.png)
+![settings](images/app-url.png)
 
 瀏覽器輸入127.0.0.1:8000/app在本機測試頁面:
 ![test](images/app-test.png)
