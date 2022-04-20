@@ -40,10 +40,10 @@ django-admin startproject project
 
  ![projecct](images/project.png)
 
- 測試django
- ---
+測試django
+---
 
- cd到專案的資料夾中，然後在終端機輸入:
+cd到專案的資料夾中，然後在終端機輸入:
 ```shell
 
 python manage.py runserver
@@ -64,7 +64,7 @@ def hello(request):
 ```
 ![views](/images/views.png)
 
-url.py中新增以下程式碼:  
+在url.py中新增以下程式碼:  
 ```py
  
 from django.urls import re_path as urls 
@@ -92,10 +92,10 @@ python manage.py startapp app
 ```
  ![app](images/app.png)
 
-把app加到設定黨(settings.py)裡:
+把app加到設定檔(settings.py)裡:
 ![settings](images/app-settings.png)
 
-在app的views.py中加入以下程式碼:
+在app資料夾裡的views.py中加入以下程式碼:
 ```py
 
 from django.http import HttpResponse
