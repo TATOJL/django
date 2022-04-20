@@ -65,7 +65,7 @@ python manage.py runserver
 
 ```
 --- 
-瀏覽器輸入127.0.0.1:8000在本機測試django:
+瀏覽器輸入127.0.0.1:8000在本機測試django:  
 ![django](images/django.png)
 
 ---
@@ -96,7 +96,7 @@ url(r'^$',views.hello)
 ![url.py](/images/urls.py.png)
 
 ---
-瀏覽器輸入127.0.0.1:8000在本機測試頁面:
+瀏覽器輸入127.0.0.1:8000在本機測試頁面:  
 ![hellowworld](/images/helloworld.png)
 
 ---
@@ -116,7 +116,7 @@ python manage.py startapp app
  ![app](images/app.png)
 
 ---
-把app加到設定檔(settings.py)裡:
+把app加到設定檔(settings.py)裡:  
 ![settings](images/app-settings.png)
 
 ---
@@ -146,7 +146,7 @@ url(r'^app/',index)
 ![settings](images/app-url.png)
 
 ---
-瀏覽器輸入127.0.0.1:8000/app在本機測試頁面:
+瀏覽器輸入127.0.0.1:8000/app在本機測試頁面:  
 ![test](images/app-test.png)
 
 <h1 id="6">
@@ -206,7 +206,7 @@ STATICFILES_DIRS = [
 ![app-statics](images/index.html.png)
 
 ---
-到專案資料夾的views.py裡把裡面程式碼改寫成:
+到專案資料夾的views.py裡把裡面程式碼改寫成:  
 ```py
 
 from django.shortcuts import render
