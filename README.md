@@ -158,11 +158,11 @@ url(r'^app/',index)
 
 
 
-在專案資料夾中，新增以下文件(html檔放templates 其他靜態資料放statics):  
+- ### 在專案資料夾中，新增以下文件(html檔放templates 其他靜態資料放statics):  
 ![app-statics](images/statics.png)
 
----
-到設定檔(settings)裡新增以下程式碼:  
+
+- ### 到設定檔(settings)裡新增以下程式碼:  
 ```py
 
 import os
@@ -187,8 +187,8 @@ STATICFILES_DIRS = [
 ![app-statics](images/statics-settings.png)
 
 
----
-到templates資料夾新增index.html，找一張圖片(放在statics/images資料夾裡)，並輸入以下程式碼用以測試靜態資料:  
+
+- ### 到templates資料夾新增index.html，找一張圖片(放在statics/images資料夾裡)，並輸入以下程式碼用以測試靜態資料:  
 ```html
 
 <!DOCTYPE html>
@@ -209,8 +209,8 @@ STATICFILES_DIRS = [
 ```
 ![app-statics](images/index.html.png)
 
----
-到專案資料夾的views.py裡把裡面程式碼改寫成:  
+
+- ### 到專案資料夾的views.py裡把裡面程式碼改寫成:  
 ```py
 
 from django.shortcuts import render
@@ -224,8 +224,8 @@ def hello(request):
 ```
 ![app-statics](images/templates-views.png)
 
----
-瀏覽器輸入127.0.0.1:8000在本機測試頁面:  
+
+- ### 瀏覽器輸入127.0.0.1:8000在本機測試頁面:  
 ![app-statics](images/HelloDjango.png)
 
 
