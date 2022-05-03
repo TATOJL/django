@@ -7,6 +7,7 @@
 - ## [測試django](#4)
 - ## [新增django app](#5)
 - ## [新增模板與靜態文件](#6)
+- ## [django連到mysql資料庫](#7)
 
 ---
 
@@ -228,4 +229,33 @@ def hello(request):
 - ### 瀏覽器輸入127.0.0.1:8000在本機測試頁面:  
 ![app-statics](images/HelloDjango.png)
 
+---
+<h1 id="7">
+ django連到mysql資料庫
+</h1>
 
+
+- ### 下載mysql客戶端:  
+
+```shell
+
+pip install mysqlclient
+
+```
+- ### 到settings.py的資料庫設定中，把預設的sqlite3改成mysql:
+
+
+```py
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql', 
+        'NAME': 'databaseName',
+        'USER': 'databaseUser',
+        'PASSWORD': 'databasePassword',
+        'HOST': 'localhost',
+        'PORT': 'portNumber',
+    }
+}
+
+```
