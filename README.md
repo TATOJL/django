@@ -8,7 +8,7 @@
 - ## [新增django app](#5)
 - ## [新增模板與靜態文件](#6)
 - ## [django連到mysql資料庫](#7)
-
+- ## [django內建後台](#8)
 ---
 
 <h1 id="1">
@@ -257,5 +257,20 @@ DATABASES = {
         'PORT': 'portNumber',
     }
 }
+
+```
+- ### 建立model:
+
+
+---
+<h1 id="8">
+ django內建後台
+</h1>
+
+- ### admin site:
+
+```shell
+
+
 
 ```
